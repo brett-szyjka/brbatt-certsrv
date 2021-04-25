@@ -1,0 +1,11 @@
+volumes:
+  step:
+    external: true
+
+services:
+  ca:
+    image: smallstep/step-ca:0.15.14
+    volumes:
+      - step:/home/step
+    ports:
+      - 9000:9000
