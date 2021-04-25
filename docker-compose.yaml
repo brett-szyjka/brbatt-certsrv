@@ -8,4 +8,4 @@ services:
     volumes:
       - step:/home/step
     ports:
-      - 443:9443
+      - 9443:443
